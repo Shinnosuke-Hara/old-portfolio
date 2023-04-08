@@ -89,9 +89,12 @@
 }
 
 .skill {
-  width: 64px;
+  width: 40px;
   margin-right: 16px;
   margin-left: 16px;
+  @include mq.mq(tablet, from) {
+    width: 64px;
+  }
   &__wrapper {
     display: flex;
     align-items: center;
