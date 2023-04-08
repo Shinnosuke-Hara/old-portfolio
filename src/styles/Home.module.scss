@@ -59,6 +59,7 @@
   &:hover {
     .arrow {
       transform: translateX(10px);
+      transition: 0.5s all;
     }
   }
 }
@@ -78,6 +79,7 @@
   width: 50px;
   height: 50px;
   margin: 0 0.5rem;
+  display: inline-block;
 }
 .text {
   font-size: 15px;
