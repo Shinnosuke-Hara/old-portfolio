@@ -92,7 +92,7 @@
     padding: 20px;
     width: 100%;
     height: 200px;
-    border-radius: 8px;
+    border-radius: 8px 0 0 8px;
     object-fit: contain;
     background-color: #e0e0ff;
     @include mq.mq(tablet, from) {
