@@ -1,0 +1,24 @@
+$breakpoints: (
+  from: (
+    'small': 'screen and (min-width: 340px)',
+    'mobile': 'screen and (min-width: 400px)',
+    'mobileLandscape': 'screen and (min-width: 480px)',
+    'tablet': 'screen and (min-width: 740px)',
+    'desktop': 'screen and (min-width: 980px)',
+    'wide': 'screen and (min-width: 1300px)'
+  ),
+  until: (
+    'small': 'screen and (max-width: 339px)',
+    'mobile': 'screen and (max-width: 399px)',
+    'mobileLandscape': 'screen and (max-width: 479px)',
+    'tablet': 'screen and (max-width: 739px)',
+    'desktop': 'screen and (max-width: 979px)',
+    'wide': 'screen and (max-width: 1299px)'
+  )
+) !default;
+
+@mixin mq($breakpoint, $direction: until) {
+  @media #{map-get(map-get($breakpoints, $direction), $breakpoint)} {
+    @content;
+  }
+}
