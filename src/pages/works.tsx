@@ -1,8 +1,12 @@
 import styles from "@/styles/Works.module.scss";
 import Link from "next/link";
+import { useEffect } from "react";
 
 /* eslint-disable @next/next/no-img-element */
 export default function Works() {
+  useEffect(() => {
+    document.title = "Works";
+  }, []);
   return (
     <>
       <main className={styles.main}>

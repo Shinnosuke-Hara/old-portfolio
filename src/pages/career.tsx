@@ -1,7 +1,12 @@
 import styles from "@/styles/Career.module.scss";
 import classNames from "classnames";
+import { useEffect } from "react";
 
 export default function Career() {
+  useEffect(() => {
+    document.title = "Career";
+  }, []);
+
   return (
     <>
       <main className={styles.main}>

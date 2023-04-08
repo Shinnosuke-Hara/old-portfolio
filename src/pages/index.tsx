@@ -1,9 +1,14 @@
 import styles from "@/styles/Home.module.scss";
 import Link from "next/link";
+import { useEffect } from "react";
 
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
 export default function Home() {
+  useEffect(() => {
+    document.title = "s.hara's Portpolio";
+  }, []);
+
   return (
     <>
       <main className={styles.main}>
