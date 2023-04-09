@@ -108,3 +108,9 @@
     }
   }
 }
+
+.break {
+  @include mq.mq(mobileLandscape, from) {
+    display: none;
+  }
+}

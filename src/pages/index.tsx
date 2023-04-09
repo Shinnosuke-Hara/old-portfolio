@@ -27,7 +27,8 @@ export default function Home() {
         <div className={styles.grid}>
           <Link className={styles.card} href="./works">
             <h2 className={styles.headline}>
-              Works <span className={styles.arrow}>-&gt;</span>
+              Works <br className={styles.break} />
+              <span className={styles.arrow}>-&gt;</span>
             </h2>
             <p className={styles.text}>
               今まで作ったものや現在取り組んでいるものを書いています。
@@ -36,21 +37,24 @@ export default function Home() {
 
           <Link className={styles.card} href="./career">
             <h2 className={styles.headline}>
-              Career <span className={styles.arrow}>-&gt;</span>
+              Career <br className={styles.break} />
+              <span className={styles.arrow}>-&gt;</span>
             </h2>
             <p className={styles.text}>簡単な経歴を書いています。</p>
           </Link>
 
           <Link className={styles.card} href="./contact">
             <h2 className={styles.headline}>
-              Contact <span className={styles.arrow}>-&gt;</span>
+              Contact <br className={styles.break} />
+              <span className={styles.arrow}>-&gt;</span>
             </h2>
             <p className={styles.text}>何かあればこちらからお願いします。</p>
           </Link>
 
           <Link className={styles.card} href="/">
             <h2 className={styles.headline}>
-              Blog <span className={styles.arrow}>-&gt;</span>
+              Blog <br className={styles.break} />
+              <span className={styles.arrow}>-&gt;</span>
             </h2>
             <p className={styles.text}>そのうちあげます。</p>
           </Link>
